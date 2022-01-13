@@ -2,14 +2,23 @@
   "name": "pet_adopter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Matt Seidel",
   "license": "ISC",
   "dependencies": {
+    "config.js": "^0.1.0",
     "core-js": "^3.20.2",
-    "regenerator-runtime": "^0.13.9"
+    "img": "^3.0.3",
+    "parcel": "^2.2.0",
+    "regenerator-runtime": "^0.13.9",
+    "views": "^1.0.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11",
+    "postcss": "^8.4.5"
   }
 }

@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pet-adopter helps you find dogs for adoption in your area."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/main.css" />
-
+    <link rel="stylesheet" href="dist/index.4c5e13d3.css" />
     <script
       defer
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-      nomodule
+      nomodule=""
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script
       defer
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
     ></script>
-
-    <script defer type="module" src="src/js/controller.js"></script>
+    <script defer type="module" src="dist/index.814b3613.js"></script>
     <title>PetAdopter: Find your best friend!</title>
   </head>
-
   <body>
     <div class="container">
       <header class="header">
-        <img src="src/img/cover.png" alt="logo" class="header-logo" />
-
+        <img
+          src="dist/Screenshot%20(22).d866fe3b.png"
+          alt="logo"
+          class="header-logo"
+        />
         <form class="search">
           <input
-            type="number"
+            type="text"
             class="search__field"
-            placeholder="enter your zipcode"
+            placeholder="Enter City, State, or ZIP"
           />
           <button class="btn search__btn">
             <ion-icon class="icon" name="navigate-outline"></ion-icon>Search
@@ -47,221 +51,18 @@
           </button>
         </form>
       </header>
-
       <div class="search-preview">
-        <div class="search-bar">
-          <h2 class="search-title">We found 3 results near 61761</h2>
-
-          <ul class="search-results">
-            <a href="#5410874">Dog 1</a>
-            <a href="#54108775">Dog 2</a>
-
-            <li class="preview">
-              <a class="preview__link preview__link--active" href="#">
-                <img
-                  class="search-img"
-                  src="src/img/pet_adopter1.jpg"
-                  alt="dog for adoption"
-                />
-                <div class="search-info">
-                  <h3 class="search-name">Scout</h3>
-                  <p class="search-sex-age">Female, puppy</p>
-                  <p class="search-location">Normal, Il</p>
-                </div>
-              </a>
-            </li>
-            <li class="preview">
-              <a class="preview__link" href="#">
-                <img
-                  class="search-img"
-                  src="src/img/IMG_1282.JPG"
-                  alt="dog for adoption"
-                />
-                <div class="search-info">
-                  <h3 class="search-name">Scooter</h3>
-                  <p class="search-sex-age">Male, Adult</p>
-                  <p class="search-location">Normal, Il</p>
-                </div>
-              </a>
-            </li>
-            <li class="preview">
-              <a class="preview__link" href="#">
-                <img
-                  class="search-img"
-                  src="src/img/Wally.jpg"
-                  alt="dog for adoption"
-                />
-                <div class="search-info">
-                  <h3 class="search-name">Wally</h3>
-                  <p class="search-sex-age">Male, Puppy</p>
-                  <p class="search-location">Flossmoor, Il</p>
-                </div>
-              </a>
-            </li>
-          </ul>
+        <div class="search-bar-container">
+          <div class="search-bar"></div>
+          <div class="pagination"></div>
         </div>
-        <div class="pet-container">
+        <div class="pet-container" id="top">
           <div class="message">
             <ion-icon name="heart-outline"></ion-icon>
-            <p>Enter your zip code to find your new best friend.</p>
+            <p>Enter your location to find your new best friend.</p>
           </div>
-
-          <!-- <div class="spinner">
-          <svg>
-            <use href="src/img/icons.svg#icon-loader"></use>
-          </svg>
-        </div> -->
-
-          <!-- <div class="error">
-            <div>
-              <svg>
-                <use href="src/img/icons.svg#icon-alert-triangle"></use>
-              </svg>
-            </div>
-            <p>No pets found for your search. Please try again!</p>
-          </div> -->
-
-          <!-- <h1 class="pet-header">Hi, I'm Scout!</h1>
-          <div class="detail-container">
-            <div class="pet-images">
-              <div class="gallery-main">
-                <img alt="photo of scout" src="src/img/IMG_1282 (1).jpg" />
-                <div class="gallery-main-tag">
-                  <p>Special needs</p>
-                </div>
-              </div>
-              <div class="gallery_thumbnails">
-                <div class="gallery-thumb gallery-thumb--selected">
-                  <img alt="photo of scout 1" src="src/img/IMG_1282.JPG" />
-                </div>
-                <div class="gallery-thumb">
-                  <img alt="photo of scout 2" src="src/img/pet_adopter1.jpg" />
-                </div>
-              </div>
-            </div>
-            <div class="cta">
-              <h2 class="cta-about">Meet Scout</h2>
-              <p class="cta-about-detail">
-                My name is Scout. Scooter. You know those things that go bump in
-                the night? I'm the one that those things are scared of.
-              </p>
-
-              <a href="#" class="btn-adopt" target="_blank"
-                >Apply to Adopt(animal.url)</a
-              >
-
-              <p class="cta-contact">
-                Not sure if you're ready? <a href="#">Ask a question.</a>
-              </p>
-            </div>
-          </div>
-          <div class="section-facts">
-            <h2 class="facts-title">Facts about Me</h2>
-            <div class="facts">
-              <div class="facts-content-half">
-                <div class="facts-content">
-                  <div class="facts-label">Breed</div>
-                  <div class="facts-info">Hound/Lab mix</div>
-                </div>
-
-                <div class="facts-content">
-                  <div class="facts-label">Color</div>
-                  <div class="facts-info">Black</div>
-                </div>
-
-                <div class="facts-content">
-                  <div class="facts-label">Age</div>
-                  <div class="facts-info">Adult</div>
-                </div>
-                <div class="facts-content">
-                  <div class="facts-label">Gender</div>
-                  <div class="facts-info">Female</div>
-                </div>
-
-                <div class="facts-content">
-                  <div class="facts-label">Size</div>
-                  <div class="facts-info">Med/Large 55lbs</div>
-                </div>
-              </div>
-
-              <div class="facts-content-half">
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-x"
-                    name="close-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Housetrained</div>
-                </div>
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-check"
-                    name="checkmark-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Shots-current</div>
-                </div>
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-check"
-                    name="checkmark-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Spayed-neutered</div>
-                </div>
-              </div>
-              <div class="facts-content-half">
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-check"
-                    name="checkmark-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Kid-friendly</div>
-                </div>
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-x"
-                    name="close-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Dog-friendly</div>
-                </div>
-                <div class="facts-content">
-                  <ion-icon
-                    class="fact-check"
-                    name="checkmark-circle-outline"
-                  ></ion-icon>
-                  <div class="facts-label">Cat-friendly</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="organization-details">
-            <h2 class="org-title">
-              I'm being cared for by <span>Private Owner inc.</span>
-            </h2>
-
-            <div class="org-info">
-              <div class="org-content organization-address">
-                <ion-icon class="org-icon" name="location-outline"></ion-icon>
-                <div class="org-detail">
-                  <p>6969 yoloswag dr.</p>
-                  <p>normal, il 61716</p>
-                </div>
-              </div>
-              <div class="org-content organization-email">
-                <ion-icon class="org-icon" name="mail-outline"></ion-icon>
-                <div class="org-detail">
-                  <p>scouty123@gmail.com</p>
-                </div>
-              </div>
-              <div class="org-content organization-phone">
-                <ion-icon class="org-icon" name="call-outline"></ion-icon>
-                <div class="org-detail">
-                  <p>(123) 555-6789</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
-
       <p class="copyright">&copy; Copyright 2022 Matt Seidel</p>
     </div>
   </body>
