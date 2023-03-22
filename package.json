@@ -13,6 +13,7 @@
     "config.js": "^0.1.0",
     "core-js": "^3.20.2",
     "img": "^3.0.3",
+    "live-server": "^1.2.2",
     "parcel": "^2.2.0",
     "regenerator-runtime": "^0.13.9",
     "views": "^1.0.2"
