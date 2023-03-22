@@ -1,6 +1,5 @@
 import paw from "../../img/Dog_Paw_Print.png";
 import View from "./View.js";
-// import searchView from "./searchView.js";
 import * as model from ".././model.js";
 
 class ResultsView extends View {
