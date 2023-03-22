@@ -15428,7 +15428,7 @@ ${this._data2.socialMedia.youtube ? ` <a rel="noopener" href='${this._data2.soci
 }
 exports.default = new PetView();
 
-},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","../../img/checkmark-circle-outline.svg":"dcEYO","../../img/close-circle-outline.svg":"2M4AU","../../img/help-circle-outline.svg":"bB2Vm"}],"9dvKv":[function(require,module,exports) {
+},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","../../img/checkmark-circle-outline.svg":"dcEYO","../../img/close-circle-outline.svg":"2M4AU","../../img/help-circle-outline.svg":"bB2Vm","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"9dvKv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("../../img/icons.svg");
