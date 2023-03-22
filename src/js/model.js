@@ -1,5 +1,5 @@
-import { API_KEY } from "../../keys";
-import { API_SECRET } from "../../keys";
+import { API_KEY } from "../../keys.js";
+import { API_SECRET } from "../../keys.js";
 import { API_TOKEN_URL } from "./config.js";
 import { API_URL } from "./config.js";
 import { API_ORG } from "./config.js";
