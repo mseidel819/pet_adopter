@@ -1,4 +1,5 @@
 dist
 .parcel-cache
 node_modules
+.DS_Store
 src/js/config.js
