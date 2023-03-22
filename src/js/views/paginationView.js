@@ -1,6 +1,6 @@
 import paw from "../../img/Dog_Paw_Print.png";
 import View from "./View.js";
-import searchView from "./searchView.js";
+// import searchView from "./searchView.js";
 import icons from "../../img/icons.svg";
 
 class PaginationView extends View {

@@ -1,6 +1,5 @@
 import View from "./View.js";
 import paw from "../../img/Dog_Paw_Print.png";
-import icons from "../../img/icons.svg";
 import checkIcon from "../../img/checkmark-circle-outline.svg";
 import xIcon from "../../img/close-circle-outline.svg";
 import nullIcon from "../../img/help-circle-outline.svg";

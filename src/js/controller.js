@@ -4,7 +4,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 import * as model from "./model.js";
-import paw from "../img/Dog_Paw_Print.png";
+// import paw from "../img/Dog_Paw_Print.png";
 import petView from "./views/petView.js";
 import searchView from "./views/searchView.js";
 import resultsView from "./views/resultsView.js";

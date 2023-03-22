@@ -523,8 +523,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _stable = require("core-js/stable");
 var _runtime = require("regenerator-runtime/runtime");
 var _modelJs = require("./model.js");
-var _dogPawPrintPng = require("../img/Dog_Paw_Print.png");
-var _dogPawPrintPngDefault = parcelHelpers.interopDefault(_dogPawPrintPng);
+// import paw from "../img/Dog_Paw_Print.png";
 var _petViewJs = require("./views/petView.js");
 var _petViewJsDefault = parcelHelpers.interopDefault(_petViewJs);
 var _searchViewJs = require("./views/searchView.js");
@@ -625,7 +624,7 @@ init(); // const previewContainer = document.querySelector(".search-results");
  //   mainImg.src = clicked.querySelector(".gallery-thumb-img").src;
  // });
 
-},{"core-js/stable":"95FYz","regenerator-runtime/runtime":"1EBPE","./model.js":"1pVJj","../img/Dog_Paw_Print.png":"2Awgq","./views/petView.js":"hQEJr","./views/searchView.js":"jcq1q","./views/resultsView.js":"5peDB","./views/paginationView.js":"2PAUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"95FYz":[function(require,module,exports) {
+},{"core-js/stable":"95FYz","regenerator-runtime/runtime":"1EBPE","./model.js":"1pVJj","./views/petView.js":"hQEJr","./views/searchView.js":"jcq1q","./views/resultsView.js":"5peDB","./views/paginationView.js":"2PAUD","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"95FYz":[function(require,module,exports) {
 require('../modules/es.symbol');
 require('../modules/es.symbol.description');
 require('../modules/es.symbol.async-iterator');
@@ -15178,53 +15177,13 @@ const getJSON = async function(url, obj) {
     }
 };
 
-},{"./config.js":"6V52N","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"2Awgq":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "Dog_Paw_Print.44f60663.png" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
-"use strict";
-var bundleURL = {
-};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"hQEJr":[function(require,module,exports) {
+},{"./config.js":"6V52N","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hQEJr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _viewJs = require("./View.js");
 var _viewJsDefault = parcelHelpers.interopDefault(_viewJs);
 var _dogPawPrintPng = require("../../img/Dog_Paw_Print.png");
 var _dogPawPrintPngDefault = parcelHelpers.interopDefault(_dogPawPrintPng);
-var _iconsSvg = require("../../img/icons.svg");
-var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 var _checkmarkCircleOutlineSvg = require("../../img/checkmark-circle-outline.svg");
 var _checkmarkCircleOutlineSvgDefault = parcelHelpers.interopDefault(_checkmarkCircleOutlineSvg);
 var _closeCircleOutlineSvg = require("../../img/close-circle-outline.svg");
@@ -15469,7 +15428,7 @@ ${this._data2.socialMedia.youtube ? ` <a rel="noopener" href='${this._data2.soci
 }
 exports.default = new PetView();
 
-},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","../../img/checkmark-circle-outline.svg":"dcEYO","../../img/close-circle-outline.svg":"2M4AU","../../img/help-circle-outline.svg":"bB2Vm"}],"9dvKv":[function(require,module,exports) {
+},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","../../img/checkmark-circle-outline.svg":"dcEYO","../../img/close-circle-outline.svg":"2M4AU","../../img/help-circle-outline.svg":"bB2Vm"}],"9dvKv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("../../img/icons.svg");
@@ -15540,6 +15499,44 @@ exports.default = View;
 },{"../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"d8AAi":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "icons.b3083592.svg" + "?" + Date.now();
 
+},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
+"use strict";
+var bundleURL = {
+};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"2Awgq":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "Dog_Paw_Print.44f60663.png" + "?" + Date.now();
+
 },{"./helpers/bundle-url":"chiK4"}],"dcEYO":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "checkmark-circle-outline.7b9668a6.svg" + "?" + Date.now();
 
@@ -15579,8 +15576,7 @@ var _dogPawPrintPng = require("../../img/Dog_Paw_Print.png");
 var _dogPawPrintPngDefault = parcelHelpers.interopDefault(_dogPawPrintPng);
 var _viewJs = require("./View.js");
 var _viewJsDefault = parcelHelpers.interopDefault(_viewJs);
-var _searchViewJs = require("./searchView.js");
-var _searchViewJsDefault = parcelHelpers.interopDefault(_searchViewJs);
+// import searchView from "./searchView.js";
 var _modelJs = require(".././model.js");
 class ResultsView extends _viewJsDefault.default {
     _parentElement = document.querySelector(".search-bar");
@@ -15637,15 +15633,14 @@ class ResultsView extends _viewJsDefault.default {
 }
 exports.default = new ResultsView();
 
-},{"../../img/Dog_Paw_Print.png":"2Awgq","./View.js":"9dvKv","./searchView.js":"jcq1q",".././model.js":"1pVJj","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"2PAUD":[function(require,module,exports) {
+},{"../../img/Dog_Paw_Print.png":"2Awgq","./View.js":"9dvKv",".././model.js":"1pVJj","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"2PAUD":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _dogPawPrintPng = require("../../img/Dog_Paw_Print.png");
 var _dogPawPrintPngDefault = parcelHelpers.interopDefault(_dogPawPrintPng);
 var _viewJs = require("./View.js");
 var _viewJsDefault = parcelHelpers.interopDefault(_viewJs);
-var _searchViewJs = require("./searchView.js");
-var _searchViewJsDefault = parcelHelpers.interopDefault(_searchViewJs);
+// import searchView from "./searchView.js";
 var _iconsSvg = require("../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class PaginationView extends _viewJsDefault.default {
@@ -15708,6 +15703,6 @@ class PaginationView extends _viewJsDefault.default {
 }
 exports.default = new PaginationView();
 
-},{"../../img/Dog_Paw_Print.png":"2Awgq","./View.js":"9dvKv","./searchView.js":"jcq1q","../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["19Ls1","lA0Es"], "lA0Es", "parcelRequire028d")
+},{"../../img/Dog_Paw_Print.png":"2Awgq","./View.js":"9dvKv","../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["19Ls1","lA0Es"], "lA0Es", "parcelRequire028d")
 
 //# sourceMappingURL=index.05cf099e.js.map
