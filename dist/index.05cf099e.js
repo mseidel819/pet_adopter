@@ -15225,6 +15225,12 @@ var _dogPawPrintPng = require("../../img/Dog_Paw_Print.png");
 var _dogPawPrintPngDefault = parcelHelpers.interopDefault(_dogPawPrintPng);
 var _iconsSvg = require("../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
+var _checkmarkCircleOutlineSvg = require("../../img/checkmark-circle-outline.svg");
+var _checkmarkCircleOutlineSvgDefault = parcelHelpers.interopDefault(_checkmarkCircleOutlineSvg);
+var _closeCircleOutlineSvg = require("../../img/close-circle-outline.svg");
+var _closeCircleOutlineSvgDefault = parcelHelpers.interopDefault(_closeCircleOutlineSvg);
+var _helpCircleOutlineSvg = require("../../img/help-circle-outline.svg");
+var _helpCircleOutlineSvgDefault = parcelHelpers.interopDefault(_helpCircleOutlineSvg);
 class PetView extends _viewJsDefault.default {
     _parentElement = document.querySelector(".pet-container");
     _errorMessage = "We could not find that pet. Please try again.";
@@ -15353,83 +15359,52 @@ class PetView extends _viewJsDefault.default {
 
         <div class="facts-content-half">
           <div class="facts-content">
-          <ion-icon class='fact-null housetrained-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check housetrained-check"
-              name="checkmark-circle-outline"
-            ></ion-icon>
-            <ion-icon
-              class="fact-x housetrained-x"
-              name="close-circle-outline"
-            ></ion-icon>
+          
+            <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check housetrained-check" />
+            <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x housetrained-x" />
+            <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null housetrained-null" />
+           
             <div class="facts-label">Housetrained</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null shots-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check shots-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x shots-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check shots-check" />
+          <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x shots-x" />
+          <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null shots-null" />
             <div class="facts-label">Shots-current</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null neutered-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check neutered-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x neutered-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check neutered-check" />
+          <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x neutered-x" />
+          <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null neutered-null" />
+        
             <div class="facts-label">Spayed-neutered</div>
           </div>
 
         </div>
         <div class="facts-content-half">
           <div class="facts-content">
-          <ion-icon class='fact-null children-null' name="help-circle-outline"></ion-icon>
+          <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check children-check" />
+          <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x children-x" />
+          <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null children-null" />
 
-            <ion-icon
-              class="fact-check children-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x children-x"
-            name="close-circle-outline"
-          ></ion-icon>
             <div class="facts-label">Kid-friendly</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null dogs-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check dogs-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x dogs-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check dogs-check" />
+          <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x dogs-x" />
+          <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null dogs-null" />
+        
             <div class="facts-label">Dog-friendly</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null cats-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check cats-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x cats-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${_checkmarkCircleOutlineSvgDefault.default} class="fact-check cats-check" />
+          <img src=${_closeCircleOutlineSvgDefault.default} class="fact-x cats-x" />
+          <img src=${_helpCircleOutlineSvgDefault.default} class="fact-null cats-null" />
+      
             <div class="facts-label">Cat-friendly</div>
           </div>
         </div>
@@ -15494,7 +15469,7 @@ ${this._data2.socialMedia.youtube ? ` <a rel="noopener" href='${this._data2.soci
 }
 exports.default = new PetView();
 
-},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"9dvKv":[function(require,module,exports) {
+},{"./View.js":"9dvKv","../../img/Dog_Paw_Print.png":"2Awgq","../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","../../img/checkmark-circle-outline.svg":"dcEYO","../../img/close-circle-outline.svg":"2M4AU","../../img/help-circle-outline.svg":"bB2Vm"}],"9dvKv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("../../img/icons.svg");
@@ -15564,6 +15539,15 @@ exports.default = View;
 
 },{"../../img/icons.svg":"d8AAi","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"d8AAi":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "icons.b3083592.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"dcEYO":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "checkmark-circle-outline.7b9668a6.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"2M4AU":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "close-circle-outline.2f750096.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"bB2Vm":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('71ti3') + "help-circle-outline.e06df128.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"chiK4"}],"jcq1q":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
