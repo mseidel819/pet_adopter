@@ -1,7 +1,5 @@
-// const API_KEY = "BPUFvkh8oJ2OQUbe0KDpOmlvbx2assWOaLKU3DD1ExENu8JUDp";
-// const API_SECRET = "0luwRLgUB1WXiMzJkcoVw26TbEKCUsYvuNnexYES";
-import { API_KEY } from "./config.js";
-import { API_SECRET } from "./config.js";
+import { API_KEY } from "../../keys";
+import { API_SECRET } from "../../keys";
 import { API_TOKEN_URL } from "./config.js";
 import { API_URL } from "./config.js";
 import { API_ORG } from "./config.js";
