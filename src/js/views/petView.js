@@ -9,7 +9,7 @@ class PetView extends View {
   _errorMessage = "We could not find that pet. Please try again.";
   _message = "Enter your zip code to find your new best friend.";
 
-  ///TAKES IN CONTROLLER FUNCTION, WHICH GETS PET INFO FROM MODEL. THEN RENDERS IT BASED ON THE HASH IN THE BROWSER ///
+  ///TAKES IN CONTROLLER FUNCTION, WHICH GETS PET INFO FROM MODEL. THEN RENDERS IT BASED ON THE HASH IN THE BROWSER //
   addHandlerRender(handler) {
     ["hashchange", "load"].forEach((ev) =>
       window.addEventListener(ev, handler)
