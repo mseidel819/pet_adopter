@@ -392,18 +392,24 @@ body {
   font-size: 2rem;
 }
 .fact-check {
+  width: 24px;
+  height: 24px;
   display: none;
   background-color: rgb(134, 223, 134);
   color: #444;
   border-radius: 100px;
 }
 .fact-x {
+  width: 24px;
+  height: 24px;
   display: none;
   background-color: rgb(170, 28, 28);
   color: #fff;
   border-radius: 100px;
 }
 .fact-null {
+  width: 24px;
+  height: 24px;
   display: none;
   background-color: #999;
   border-radius: 100px;

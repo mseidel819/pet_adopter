@@ -1,13 +1,15 @@
 import View from "./View.js";
 import paw from "../../img/Dog_Paw_Print.png";
-import icons from "../../img/icons.svg";
+import checkIcon from "../../img/checkmark-circle-outline.svg";
+import xIcon from "../../img/close-circle-outline.svg";
+import nullIcon from "../../img/help-circle-outline.svg";
 
 class PetView extends View {
   _parentElement = document.querySelector(".pet-container");
   _errorMessage = "We could not find that pet. Please try again.";
   _message = "Enter your zip code to find your new best friend.";
 
-  ///TAKES IN CONTROLLER FUNCTION, WHICH GETS PET INFO FROM MODEL. THEN RENDERS IT BASED ON THE HASH IN THE BROWSER ///
+  ///TAKES IN CONTROLLER FUNCTION, WHICH GETS PET INFO FROM MODEL. THEN RENDERS IT BASED ON THE HASH IN THE BROWSER //
   addHandlerRender(handler) {
     ["hashchange", "load"].forEach((ev) =>
       window.addEventListener(ev, handler)
@@ -210,83 +212,52 @@ class PetView extends View {
 
         <div class="facts-content-half">
           <div class="facts-content">
-          <ion-icon class='fact-null housetrained-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check housetrained-check"
-              name="checkmark-circle-outline"
-            ></ion-icon>
-            <ion-icon
-              class="fact-x housetrained-x"
-              name="close-circle-outline"
-            ></ion-icon>
+          
+            <img src=${checkIcon} class="fact-check housetrained-check" />
+            <img src=${xIcon} class="fact-x housetrained-x" />
+            <img src=${nullIcon} class="fact-null housetrained-null" />
+           
             <div class="facts-label">Housetrained</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null shots-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check shots-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x shots-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${checkIcon} class="fact-check shots-check" />
+          <img src=${xIcon} class="fact-x shots-x" />
+          <img src=${nullIcon} class="fact-null shots-null" />
             <div class="facts-label">Shots-current</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null neutered-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check neutered-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x neutered-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${checkIcon} class="fact-check neutered-check" />
+          <img src=${xIcon} class="fact-x neutered-x" />
+          <img src=${nullIcon} class="fact-null neutered-null" />
+        
             <div class="facts-label">Spayed-neutered</div>
           </div>
 
         </div>
         <div class="facts-content-half">
           <div class="facts-content">
-          <ion-icon class='fact-null children-null' name="help-circle-outline"></ion-icon>
+          <img src=${checkIcon} class="fact-check children-check" />
+          <img src=${xIcon} class="fact-x children-x" />
+          <img src=${nullIcon} class="fact-null children-null" />
 
-            <ion-icon
-              class="fact-check children-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x children-x"
-            name="close-circle-outline"
-          ></ion-icon>
             <div class="facts-label">Kid-friendly</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null dogs-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check dogs-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x dogs-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${checkIcon} class="fact-check dogs-check" />
+          <img src=${xIcon} class="fact-x dogs-x" />
+          <img src=${nullIcon} class="fact-null dogs-null" />
+        
             <div class="facts-label">Dog-friendly</div>
           </div>
 
           <div class="facts-content">
-          <ion-icon class='fact-null cats-null' name="help-circle-outline"></ion-icon>
-
-            <ion-icon
-              class="fact-check cats-check"
-              name="checkmark-circle-outline"
-            ></ion-icon><ion-icon
-            class="fact-x cats-x"
-            name="close-circle-outline"
-          ></ion-icon>
+          <img src=${checkIcon} class="fact-check cats-check" />
+          <img src=${xIcon} class="fact-x cats-x" />
+          <img src=${nullIcon} class="fact-null cats-null" />
+      
             <div class="facts-label">Cat-friendly</div>
           </div>
         </div>
